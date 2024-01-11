@@ -1,0 +1,55 @@
+p {
+  color: #e5e7eb;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.form {
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  border: 1px solid #4d5562;
+  background-color: #212936;
+  background-image: url("../../../assets/fondo.svg");
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #4d5562;
+  font-size: 0.75rem;
+  gap: 5px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  color: #4d5562;
+  font-size: 0.75rem;
+  gap: 5px;
+}
+
+input {
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  border: 2px solid gray;
+  background-color: #212936;
+  color: #a1a1a9;
+}
+.errorMessage {
+  color: red;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: rgb(255, 144, 144);
+  padding: 5px;
+  border: rebeccapurple;
+}

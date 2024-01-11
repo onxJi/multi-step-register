@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <!-- Primer elipse -->
+  <circle cx="-280" cy="285" r="400" fill="#3098f3" />
+
+  <!-- Elipse blanco -->
+  <circle cx="50" cy="500" r="8.5" fill="#ffffff" />
+
+  <!-- Elipse Amarillo chico -->
+  <circle cx="500" cy="100" r="14" fill="#ffd02b" />
+
+  <!-- Elipse Amarillo Grande -->
+  <circle cx="650" cy="750" r="65" fill="#ffd02b" />
+
+  <!-- Elipse Chico azul marino -->
+  <circle cx="910" cy="200" r="23.5" fill="#016eb9" />
+</svg>
