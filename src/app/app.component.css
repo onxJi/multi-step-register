@@ -2,4 +2,14 @@ main {
   display: grid;
   place-items: center;
   align-items: center;
+  width: 100%;
+}
+app-form {
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  app-form {
+    width: 80%;
+  }
 }

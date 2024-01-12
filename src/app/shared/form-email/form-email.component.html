@@ -1,4 +1,4 @@
-<form class="form" [formGroup]="formemail">
+<form class="form" [formGroup]="formemail" (ngSubmit)="step2()">
     <p>Register</p>
     <div class="name">
         <label for="name">Name</label>
@@ -14,5 +14,5 @@
         <span class="errorMessage">{{viewErrorMessage('email')}}</span>
         }
     </div>
-    <button type="submit" (click)="step2()">Continue</button>
+    <app-submit-button [label]="'Continue'" class="app-submit-button"></app-submit-button>
 </form>

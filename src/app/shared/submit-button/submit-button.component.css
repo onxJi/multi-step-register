@@ -1,0 +1,14 @@
+.submit-button {
+  border-radius: 50px;
+  width: 140px;
+  height: 40px;
+  background: linear-gradient(#845eee, #652cd1);
+  border: none;
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+  transform: scale(1.1);
+}

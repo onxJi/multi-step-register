@@ -9,5 +9,6 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
-
+  step: string = '1';
+  steps: string = '3';
 }

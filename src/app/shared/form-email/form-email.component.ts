@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
+import { SubmitButtonComponent } from '../submit-button/submit-button.component';
 
 @Component({
   selector: 'app-form-email',
   standalone: true,
-  imports: [RouterOutlet, ReactiveFormsModule],
+  imports: [RouterOutlet, ReactiveFormsModule, SubmitButtonComponent],
   templateUrl: './form-email.component.html',
   styleUrl: './form-email.component.css'
 })

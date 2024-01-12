@@ -1,14 +1,12 @@
 p {
   color: #e5e7eb;
   font-size: 1.25rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .form {
   border-radius: 10px;
-  width: 80%;
-  max-width: 500px;
-  min-width: 300px;
+  width: 100%;
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -16,7 +14,7 @@ p {
   color: #fff;
   border: 1px solid #4d5562;
   background-color: #212936;
-  background-image: url("../../../assets/fondo.svg");
+  /* background-image: url("../../../assets/fondo.svg"); */
 }
 
 .name {
@@ -30,7 +28,7 @@ p {
 .email {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   color: #4d5562;
   font-size: 0.75rem;
   gap: 5px;
@@ -52,4 +50,8 @@ input {
   background-color: rgb(255, 144, 144);
   padding: 5px;
   border: rebeccapurple;
+}
+.app-submit-button {
+  justify-self: center;
+  align-self: center;
 }
