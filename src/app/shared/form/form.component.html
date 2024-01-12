@@ -1,7 +1,17 @@
 <router-outlet></router-outlet>
 <div class="steps">
-    <span>Step {{step}} de {{steps}}</span>
-    <input type="radio">
-    <input type="radio">
-    <input type="radio">
+    <span>Step {{ currentStep }} of {{ steps }}</span>
+    <label class="content-input">
+        <input type="radio" [checked]="currentStep === 1">
+        <i></i>
+    </label>
+
+    <label class="content-input">
+        <input type="radio" [checked]="currentStep === 2">
+        <i></i>
+    </label>
+    <label class="content-input">
+        <input type="radio" [checked]="currentStep === 3">
+        <i></i>
+    </label>
 </div>

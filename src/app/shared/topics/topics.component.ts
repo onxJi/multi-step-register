@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { StepService } from '../../services/StepService.service';
 
 @Component({
   selector: 'app-topics',
@@ -7,6 +8,11 @@ import { Component } from '@angular/core';
   templateUrl: './topics.component.html',
   styleUrl: './topics.component.css'
 })
-export class TopicsComponent {
+export class TopicsComponent implements OnInit {
 
+  constructor(private stepService: StepService) { }
+  ngOnInit(): void {
+    // Actualiza el paso al que pertenece este componente
+    this.stepService.setCurrentStep(2);
+  }
 }
