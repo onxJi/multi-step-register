@@ -1,0 +1,31 @@
+<div class="form">
+  <p>Summary</p>
+  <div class="summary-label">
+    <p>Name:</p>
+    <span>{{ summaryData.name }}</span>
+  </div>
+  <div class="summary-label">
+    <p>Email:</p>
+    <span>{{ summaryData.email }}</span>
+  </div>
+  <div class="summary-topic">
+    <p>Topics:</p>
+    @if (summaryData.topic1!== '') {
+    <li>{{ summaryData.topic1 }}</li>
+    } @if (summaryData.topic2 !== '') {
+    <li>{{ summaryData.topic2 }}</li>
+    } @if (summaryData.topic3!== '') {
+    <li>{{ summaryData.topic3 }}</li>
+    }
+  </div>
+  <app-submit-button
+    [label]="'Confirm'"
+    class="app-submit-button"
+    (click)="confirmData()"
+  ></app-submit-button>
+  @if(confirm){
+  <div class="succes-message">
+    <p>✅ Success</p>
+  </div>
+  }
+</div>

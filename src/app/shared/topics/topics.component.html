@@ -1,1 +1,21 @@
-<p>topics works!</p>
+<form class="form" [formGroup]="formtopic" (ngSubmit)="step3()">
+  <p>Which topics you are interested in?</p>
+  @for (label of labels; track $index) {
+  <label
+    class="toggle-button"
+    [class.toggle-button-change]="formtopic.get(label.id)?.value"
+  >
+    <input
+      type="checkbox"
+      id="{{ label.id }}"
+      name="{{ label.id }}"
+      formControlName="{{ label.id }}"
+    />
+    <span>{{ label.label }}</span>
+  </label>
+  }
+  <app-submit-button
+    [label]="'Continue'"
+    class="app-submit-button"
+  ></app-submit-button>
+</form>

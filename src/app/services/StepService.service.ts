@@ -9,6 +9,8 @@ export class StepService {
     private currentStepSubject = new BehaviorSubject<number>(1);
     currentStep$ = this.currentStepSubject.asObservable();
 
+    constructor() { }
+
     setCurrentStep(step: number): void {
         this.currentStepSubject.next(step);
     }

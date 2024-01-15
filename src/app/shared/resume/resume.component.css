@@ -1,0 +1,48 @@
+.form {
+  border-radius: 10px;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  border: 1px solid #4d5562;
+  background-color: #212936;
+  /* background-image: url("../../../assets/fondo.svg"); */
+}
+.app-submit-button {
+  justify-self: center;
+  align-self: center;
+}
+.summary-label {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+.summary-topic {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+.summary-topic li {
+  padding-left: 0.5rem;
+}
+.summary-topic p {
+  color: #a1a1a9;
+}
+.summary-label p {
+  color: #a1a1a9;
+}
+.summary-label span {
+  color: #fff;
+}
+.succes-message {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  background: linear-gradient(rgba(76, 175, 80, 1), rgb(94, 148, 96));
+}

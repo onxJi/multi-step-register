@@ -1,17 +1,10 @@
 <router-outlet></router-outlet>
 <div class="steps">
     <span>Step {{ currentStep }} of {{ steps }}</span>
-    <label class="content-input">
-        <input type="radio" [checked]="currentStep === 1">
+    @for (step of allSteps; track $index) {
+         <label class="content-input">
+        <input type="radio" [checked]="shouldCheckRadioButton(step)" (change)="updateStep(step)">
         <i></i>
-    </label>
-
-    <label class="content-input">
-        <input type="radio" [checked]="currentStep === 2">
-        <i></i>
-    </label>
-    <label class="content-input">
-        <input type="radio" [checked]="currentStep === 3">
-        <i></i>
-    </label>
+        </label>
+    }
 </div>
